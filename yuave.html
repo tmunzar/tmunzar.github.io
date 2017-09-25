@@ -16,16 +16,18 @@
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="top-bar">
         <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-
+          <ul class="dropdown menu">
             <li>
               <a href="/"><strong>Talal Munzar</strong></a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#aboutMe" data-smooth-scroll>About</a>
             </li>
             <li>
-              <a href="#">Work</a>
+              <a href="#skills" data-smooth-scroll>Skills</a>
+            </li>
+            <li>
+              <a href="#work" data-smooth-scroll>Work</a>
             </li>
             <li>
               <a href="#">Contact</a>
@@ -52,18 +54,82 @@
         <div class="grid-x grid-margin-x">
           <div class="medium-8 medium-offset-2 cell">
             <h3 class="text-center">Administration Panel</h3>
-      
-            <div class="margin-bottom-50">
+            <p>
+              This was an exercise of designing & building a completely new administration panel using <a href="https://vuejs.org/" target="_blank">VueJS</a> as the JS framework and <a href="https://foundation.zurb.com/sites/docs/v/5.5.3/" target="_blank">Zurb Foundation 5</a> as the HTML framework. The application communicates with a backend server via a token-authorization based JSON api.
+            </p>
+            <p>
+              The following are screenshots (with private information redacted) of how the Yuave administration panel looks like. A full working demo can be provided upon request.
+            </p>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="medium-6 cell">
+            <div class="image-preview-holder margin-bottom-50">
               <h5>Dashboard</h5>
-              <img src="assets/img/portfolio/yuave-admin-1.png" />
+              <p>The Dashboard is simple with common task buttons</p>
+              <a href="#" data-open="dashboardModal">
+                <img src="assets/img/portfolio/yuave-admin-1.png"/>
+              </a>
+              <div class="reveal large" id="dashboardModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="margin-top-30">
+                  <img src="assets/img/portfolio/yuave-admin-1.png" />
+                </div>
+              </div>
             </div>
-            <div class="margin-bottom-50">
+            <div class="image-preview-holder margin-bottom-50">
               <h5>Customer List</h5>
-              <img src="assets/img/portfolio/yuave-admin-2.png" />
+              <p>The list of all the customers using the IVR application.</p>
+              <a href="#" data-open="customerListModal">
+                <img src="assets/img/portfolio/yuave-admin-2.png" />
+              </a>
+              <div class="reveal large" id="customerListModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="margin-top-30">
+                  <img src="assets/img/portfolio/yuave-admin-2.png" />
+                </div>
+              </div>
             </div>
-            <div class="margin-bottom-50">
+            <div class="image-preview-holder margin-bottom-50">
+              <h5>Adminstrators List</h5>
+              <p>The list of all the administrators managing the IVR application.</p>
+              <a href="#" data-open="adminListModal">
+                <img src="assets/img/portfolio/yuave-admin-4.png" />
+              </a>
+              <div class="reveal large" id="adminListModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="margin-top-30">
+                  <img src="assets/img/portfolio/yuave-admin-4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 cell">
+            <div class="image-preview-holder margin-bottom-50">
               <h5>Customer View</h5>
-              <img src="assets/img/portfolio/yuave-admin-3.png" />
+              <p>
+                An extensive customer view. This was the key component of this application. The previous version (which was made using Jquery) of the application had an unintuitive customer view, where data was not shown cleary.
+              </p>
+              <p>
+                I took it upon myself to have the customer data in three distinguishable sections i.e. User Details, Forwarded Numbers, Extensions).
+              </p>
+              <a href="#" data-open="customerViewModal">
+                <img src="assets/img/portfolio/yuave-admin-3.png" />
+              </a>
+              <div class="reveal large" id="customerViewModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="margin-top-30">
+                  <img src="assets/img/portfolio/yuave-admin-3.png" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
