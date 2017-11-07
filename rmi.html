@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talal Munzar</title>
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
@@ -16,26 +16,27 @@
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="top-bar">
         <div class="top-bar-left">
-          <ul class="dropdown menu">
-            <li>
-              <a href="/"><strong>Talal Munzar</strong></a>
+          <ul class="menu">
+            <li class="title">
+              <a href="/">TMunzar</a>
             </li>
-            <li>
-              <a href="#aboutMe" data-smooth-scroll>About</a>
-            </li>
-            <li>
-              <a href="#skills" data-smooth-scroll>Skills</a>
-            </li>
-            <li>
-              <a href="#work" data-smooth-scroll>Work</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+
           </ul>
         </div>
         <div class="top-bar-right">
           <ul class="menu">
+            <li>
+              <a href="/#aboutMe">About</a>
+            </li>
+            <li>
+              <a href="/#skills">Skills</a>
+            </li>
+            <li>
+              <a href="/#work">Work</a>
+            </li>
+            <li>
+              <a href="/#contactMe">Contact</a>
+            </li>
             <li class="hide-for-medium">
               <button type="button" class="button" data-toggle="offCanvas">Open Right</button>
             </li>
@@ -44,71 +45,82 @@
       </div>
 
 
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-          <div class="medium-6 medium-offset-3 cell">
-            <h1 class="text-center">RMI</h1>
-            <p>
-              Rehman Medical Institue is Peshawar's leading medical college and institute. They wanted a fresh update to their website and we not only redesigned the look and feel of it, but also updated its code and functionality to make it faster to load and easier to maintain.
-            </p>
-            <p>
-              The design process was a collaboration with a graphic designer. The website was then developed solely by me using <a href="https://typicms.org/">TypiCMS</a> and Foundation 6. VueJS was also integrated along with an ElasticSearch module for search indexing.
-            </p>
-            <p>
-              The website is currently live and accessible.
-            </p>
-            <div class="text-center">
-              <a href="http://rmi.edu.pk/" class="button" target="_blank">
-                Visit RMI
-              </a>
+      <div id="page">
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 medium-offset-3 cell">
+              <h1 class="text-center page-heading">RMI</h1>
+              <p>
+                Rehman Medical Institue is Peshawar's leading medical college and institute. They wanted a fresh update to their website and we not only redesigned the look and feel of it, but also updated its code and functionality to make it faster to load and easier to maintain.
+              </p>
+              <p>
+                The design process was a collaboration with a graphic designer. The website was then developed solely by me using <a href="https://typicms.org/">TypiCMS</a> and Foundation 6. VueJS was also integrated along with an ElasticSearch module for search indexing.
+              </p>
+              <p>
+                The website is currently live and accessible.
+              </p>
+              <div class="text-center">
+                <a href="http://rmi.edu.pk/" class="button" target="_blank">
+                  Visit RMI
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 medium-offset-3 cell">
+              <div class="image-preview-holder margin-bottom-50">
+                <a href="#" data-open="modal01">
+                  <img src="assets/img/portfolio/rmi-screen-01.jpg"/>
+                </a>
+                <div class="reveal large" id="modal01" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="margin-top-30">
+                    <img src="assets/img/portfolio/rmi-screen-01.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="image-preview-holder margin-bottom-50">
+                <a href="#" data-open="modal02">
+                  <img src="assets/img/portfolio/rmi-screen-02.jpg"/>
+                </a>
+                <div class="reveal large" id="modal02" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="margin-top-30">
+                    <img src="assets/img/portfolio/rmi-screen-02.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="image-preview-holder margin-bottom-50">
+                <a href="#" data-open="modal03s">
+                  <img src="assets/img/portfolio/rmi-screen-03s.jpg"/>
+                </a>
+                <div class="reveal large" id="modal03s" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="margin-top-30">
+                    <img src="assets/img/portfolio/rmi-screen-03s.jpg" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="grid-x grid-margin-x">
-          <div class="medium-6 medium-offset-3 cell">
-            <div class="image-preview-holder margin-bottom-50">
-              <a href="#" data-open="modal01">
-                <img src="assets/img/portfolio/rmi-screen-01.jpg"/>
-              </a>
-              <div class="reveal large" id="modal01" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="margin-top-30">
-                  <img src="assets/img/portfolio/rmi-screen-01.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="image-preview-holder margin-bottom-50">
-              <a href="#" data-open="modal02">
-                <img src="assets/img/portfolio/rmi-screen-02.jpg"/>
-              </a>
-              <div class="reveal large" id="modal02" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="margin-top-30">
-                  <img src="assets/img/portfolio/rmi-screen-02.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="image-preview-holder margin-bottom-50">
-              <a href="#" data-open="modal03s">
-                <img src="assets/img/portfolio/rmi-screen-03s.jpg"/>
-              </a>
-              <div class="reveal large" id="modal03s" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="margin-top-30">
-                  <img src="assets/img/portfolio/rmi-screen-03s.jpg" />
-                </div>
-              </div>
-            </div>
+        
+      </div>
+
+      <div id="footer">
+        <div class="row">
+          <div class="medium-12">
+            <h6 class="text-center">Copyright ©Tmunzar 2017</h6>
           </div>
         </div>
       </div>
-      
+
     </div>
     <script src="assets/js/app.js"></script>
   </body>

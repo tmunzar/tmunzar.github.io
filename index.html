@@ -6,55 +6,72 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talal Munzar</title>
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
     <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-      <!-- Your menu or Off-canvas content goes here -->
+      <ul class="menu vertical">
+        <li>
+          <a href="#aboutMe" data-smooth-scroll>About</a>
+        </li>
+        <li>
+          <a href="#skills" data-smooth-scroll>Skills</a>
+        </li>
+        <li>
+          <a href="#work" data-smooth-scroll>Work</a>
+        </li>
+        <li>
+          <a href="#contactMe" data-smooth-scroll>Contact</a>
+        </li>
+      </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="top-bar">
         <div class="top-bar-left">
-          <ul class="dropdown menu">
-            <li>
-              <a href="/"><strong>Talal Munzar</strong></a>
+          <ul class="menu">
+            <li class="title">
+              <a href="/">TMunzar</a>
             </li>
-            <li>
-              <a href="#aboutMe" data-smooth-scroll>About</a>
-            </li>
-            <li>
-              <a href="#skills" data-smooth-scroll>Skills</a>
-            </li>
-            <li>
-              <a href="#work" data-smooth-scroll>Work</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+
           </ul>
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li class="hide-for-medium">
-              <button type="button" class="button" data-toggle="offCanvas">Open Right</button>
+            <li class="hide-for-small-only">
+              <a href="#aboutMe" data-smooth-scroll>About</a>
+            </li>
+            <li class="hide-for-small-only">
+              <a href="#skills" data-smooth-scroll>Skills</a>
+            </li>
+            <li class="hide-for-small-only">
+              <a href="#work" data-smooth-scroll>Work</a>
+            </li>
+            <li class="hide-for-small-only">
+              <a href="#contactMe" data-smooth-scroll>Contact</a>
             </li>
           </ul>
+          <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
         </div>
       </div>
 
 
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
-          <div class="medium-6 medium-offset-3 cell">
-            <h1 class="text-center">Talal Munzar</h1>
+          <div class="medium-10 medium-offset-1 cell">
+            <h1 class="text-center greetings margin-top-30">Talal Munzar</h1>
+            <h2 class="text-center sub-greetings">
+              My hats:<br>
+              Full Stack Developer, UX Designer, HCI Grad Student
+            </h2>
           </div>
         </div>
         <div class="sections">
-        <section id="aboutMe">
+        <section id="aboutMe" class="margin-top-50">
           <div class="grid-x grid-margin-x">
             <div class="medium-6 medium-offset-3 cell">
-              <h3>About Me</h3>
+              <hr>
+              <h1 class="text-center margin-top-30 margin-bottom-50">About Me</h1>
               <p>
                 I am a full stack developer with a 7 year experience working in the web design industry. Five of those years were spent running a small web design firm based called <a href="http://www.jellyfish.com.pk" target="_blank">Jellyfish</a> in Islamabad, Pakistan. I did my Bsc (Hons) with a major in Computer Engineering from the <a href="https://lums.edu.pk" target="_blank">Lahore University of Management Sciences</a>. I'm currently enrolled in the Human Computer Interaction masters program at <a href="https://ischool.umd.edu/" target="_blank">iSchool</a> in University of Maryland - College Park.
               </p>
@@ -68,7 +85,8 @@
         <section id="skills">
           <div class="grid-x grid-margin-x">
             <div class="medium-6 medium-offset-3 cell">
-              <h3>Skills</h3>
+              <hr>
+              <h1 class="text-center margin-top-30 margin-bottom-50">Skills</h1>
               <p>
                 I am well versed in front-end development, using HTML, SASS, JS (<a href="https://vuejs.org" target="_blank">VueJS</a> being my preffered JS framework). I also have vast experience working with PHP and its various frameworks, with <a href="https://laravel.com/" target="_blank">Laravel</a> being my preffered one.
               </p>
@@ -110,7 +128,8 @@
         <section id="work">
           <div class="grid-x grid-margin-x">
             <div class="medium-6 medium-offset-3 cell">
-              <h1 class="text-center">My Work</h1>
+              <hr>
+              <h1 class="text-center margin-top-30 margin-bottom-50">My Work</h1>
             </div>
           </div>
       
@@ -120,133 +139,242 @@
               <div class="card-divider">
                 <h6 class="text-center">Yuave</h6>
               </div>
-              <a href="yuave.html">
-              <img src="assets/img/logos/yuave.png" style="background-color: #dedede; padding: 5px;" />
-              </a>
-              <div class="card-section">
-                <p>
-                  A year and half spent re-working the UI, UX and underlying code of an existing JS based web application for a Interactive voice response (IVR) solution.
-                </p>
+              <a class="card-content" href="yuave.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/yuave.png" style="background-color: #aaa; padding: 5px;" />
               </div>
+                <div class="card-section">
+                  <p>
+                    A year and half spent re-working the UI, UX and underlying code of an existing JS based web application
+                    for a Interactive voice response (IVR) solution.
+                  </p>
+                </div>
+              </a>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">trav2trav</h6>
               </div>
-              <a href="trav2trav.html">
-                <img src="assets/img/logos/trav2trav.png" />
+              <a class="card-content" href="trav2trav.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/trav2trav.png" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Social network for travllers, a US based startup.
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  Social network for travllers, a US based startup.
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">Connectavo</h6>
               </div>
-              <a href="connectavo.html">
-                <img src="assets/img/logos/connectavo.svg" />
+              <a class="card-content" href="connectavo.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/connectavo.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Bootstrap based administration portal.
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  Bootstrap based administration portal.
-                </p>
-              </div>
             </div>
       
-            <div class="cell card">
+            <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">Angry Ballerina</h6>
               </div>
-              <a href="angryballerina.html">
-                <img src="assets/img/logos/angryballerina.svg" />
+              <a class="card-content" href="angryballerina.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/angryballerina.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Online shopping website for a<br> UK based fashion label
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  Online shopping website for a<br> UK based fashion label
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">Inflight VR</h6>
               </div>
-              <a href="inflightvr.html">
-                <img src="assets/img/logos/inflight-vr.svg" />
+              <a class="card-content" href="inflightvr.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/inflight-vr.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Branding website for Inflight VR; a Munich, Germany based startup working on an VR ecosystem for the inflight entertainment industry.
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  Branding website for Inflight VR; a Munich, Germany based startup working on an VR ecosystem for the inflight entertainment industry.
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">RMI</h6>
               </div>
-              <a href="rmi.html">
-                <img src="assets/img/logos/rmi.svg" />
+              <a class="card-content" href="rmi.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/rmi.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    A university website for the Rehman Medical Insitute with a multi-site component and an extensive backend for multi-site administration.
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  A university website for the Rehman Medical Insitute with a multi-site component and an extensive backend for multi-site administration.
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">Casino VR</h6>
               </div>
-              <a href="casinovr.html">
-                <img src="assets/img/logos/casino-vr.svg" />
+              <a class="card-content" href="casinovr.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/casino-vr.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Branding website for Casino VR;<br> a US based startup, working on a Oculus/SamsungVR/Daydream poker game.
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  Branding website for Casino VR;<br> a US based startup, working on a Oculus/SamsungVR/Daydream poker game.
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">European Union - Punjab Access to Justice</h6>
               </div>
-              <a href="eua2j.html">
-                <img src="assets/img/logos/eu-pa2j.svg" />
+              <a class="card-content" href="eua2j.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/eu-pa2j.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    An organisational website for a European Union NGO working in Punjab
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  An organisational website for a European Union NGO working in Punjab
-                </p>
-              </div>
             </div>
       
             <div class="cell">
               <div class="card-divider">
                 <h6 class="text-center">Good Omen Films</h6>
               </div>
-              <a href="goodomenfilms.html">
-                <img src="assets/img/logos/good-omen-films.png" />
+              <a class="card-content" href="goodomenfilms.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/goodomenfilms.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    An organisational website for a film-making duo based in Toronto, Canada
+                  </p>
+                </div>
               </a>
-              <div class="card-section">
-                <p>
-                  An organisational website for a film-making duo based in Toronto, Canada
-                </p>
+            </div>
+      
+            <div class="cell">
+              <div class="card-divider">
+                <h6 class="text-center">Jellyfish</h6>
               </div>
+              <a class="card-content" href="jellyfish.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/jellyfish.svg" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    The website I developed, animated and helped design for my company.
+                  </p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="cell">
+              <div class="card-divider">
+                <h6 class="text-center">Karachi Bienalle 2017</h6>
+              </div>
+              <a class="card-content" href="kb17.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/kb17.png" style="height: 110px" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Website collaboration with artist Samya Arif for a website for the Karachi Bienalle 2017 artists festival.
+                  </p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="cell">
+              <div class="card-divider">
+                <h6 class="text-center">Mahvesh Murad</h6>
+              </div>
+              <a class="card-content" href="mm.html">
+                <div class="card-image-holder">
+                  <span class="helper"></span>
+                  <img src="assets/img/logos/mm.png" />
+                </div>
+                <div class="card-section">
+                  <p>
+                    Website collaboration with artist Samya Arif for a website for radio host, critic and editor Mahvesh Murad.
+                  </p>
+                </div>
+              </a>
             </div>
       
           </div>
         </section>
+      
+        <section id="contactMe" class="margin-top-100">
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 medium-offset-3 cell">
+              <hr>
+              <h1 class="text-center">Contact Me</h1>
+      
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="medium-4 medium-offset-4 cell">
+              <p>
+                Email: <a href="mailto:tmunzar@gmail.com">tmunzar@gmail.com</a>
+              </p>
+              <p>
+                Twitter: <a href="https://twitter.com/tmunzar" target="_blank">@tmunzar</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      
         </div>
       </div>
       
+
+      <div id="footer">
+        <div class="row">
+          <div class="medium-12">
+            <h6 class="text-center">Copyright ©Tmunzar 2017</h6>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="assets/js/app.js"></script>
   </body>
