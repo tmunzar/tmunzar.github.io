@@ -11,7 +11,20 @@
   </head>
   <body>
     <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-      <!-- Your menu or Off-canvas content goes here -->
+      <ul class="menu vertical">
+        <li>
+          <a href="/#aboutMe" data-smooth-scroll>About</a>
+        </li>
+        <li>
+          <a href="/#skills" data-smooth-scroll>Skills</a>
+        </li>
+        <li>
+          <a href="/#work" data-smooth-scroll>Work</a>
+        </li>
+        <li>
+          <a href="/#contactMe" data-smooth-scroll>Contact</a>
+        </li>
+      </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="top-bar">
@@ -25,22 +38,20 @@
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li>
+            <li class="hide-for-small-only">
               <a href="/#aboutMe">About</a>
             </li>
-            <li>
+            <li class="hide-for-small-only">
               <a href="/#skills">Skills</a>
             </li>
-            <li>
+            <li class="hide-for-small-only">
               <a href="/#work">Work</a>
             </li>
-            <li>
+            <li class="hide-for-small-only">
               <a href="/#contactMe">Contact</a>
             </li>
-            <li class="hide-for-medium">
-              <button type="button" class="button" data-toggle="offCanvas">Open Right</button>
-            </li>
           </ul>
+          <button class="menu-icon hide-for-medium" type="button" data-toggle="offCanvas"></button>
         </div>
       </div>
 
